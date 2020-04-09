@@ -1,0 +1,11 @@
+background_r: 100
+rosdistro: 'melodic
+
+  '
+roslaunch:
+  uris: {host_paresh_macbookpro__32795: 'http://paresh-MacBookPro:32795/'}
+rosversion: '1.14.5
+
+  '
+run_id: 43e2706a-7a9d-11ea-8b46-90fd61edc49c
+turtlesim: {background_b: 255, background_g: 150, background_r: 150}
