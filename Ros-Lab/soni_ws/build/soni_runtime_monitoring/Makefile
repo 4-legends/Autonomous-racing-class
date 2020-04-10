@@ -56,6 +56,18 @@ CMAKE_BINARY_DIR = /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -67,6 +79,17 @@ install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -101,18 +124,6 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -123,17 +134,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -166,6 +166,21 @@ preinstall/fast:
 depend:
 	cd /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/rule:
+	cd /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build && $(MAKE) -f CMakeFiles/Makefile2 soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/rule
+.PHONY : soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/rule
+
+# Convenience name for target.
+soni_average_vesc: soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/rule
+
+.PHONY : soni_average_vesc
+
+# fast build rule for target.
+soni_average_vesc/fast:
+	cd /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build && $(MAKE) -f soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/build.make soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/build
+.PHONY : soni_average_vesc/fast
 
 # Convenience name for target.
 soni_runtime_monitoring/CMakeFiles/soni_average.dir/rule:
@@ -209,23 +224,54 @@ src/soni_average.cpp.s:
 	cd /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build && $(MAKE) -f soni_runtime_monitoring/CMakeFiles/soni_average.dir/build.make soni_runtime_monitoring/CMakeFiles/soni_average.dir/src/soni_average.cpp.s
 .PHONY : src/soni_average.cpp.s
 
+src/soni_average_vesc.o: src/soni_average_vesc.cpp.o
+
+.PHONY : src/soni_average_vesc.o
+
+# target to build an object file
+src/soni_average_vesc.cpp.o:
+	cd /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build && $(MAKE) -f soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/build.make soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/src/soni_average_vesc.cpp.o
+.PHONY : src/soni_average_vesc.cpp.o
+
+src/soni_average_vesc.i: src/soni_average_vesc.cpp.i
+
+.PHONY : src/soni_average_vesc.i
+
+# target to preprocess a source file
+src/soni_average_vesc.cpp.i:
+	cd /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build && $(MAKE) -f soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/build.make soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/src/soni_average_vesc.cpp.i
+.PHONY : src/soni_average_vesc.cpp.i
+
+src/soni_average_vesc.s: src/soni_average_vesc.cpp.s
+
+.PHONY : src/soni_average_vesc.s
+
+# target to generate assembly for a file
+src/soni_average_vesc.cpp.s:
+	cd /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build && $(MAKE) -f soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/build.make soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/src/soni_average_vesc.cpp.s
+.PHONY : src/soni_average_vesc.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install"
 	@echo "... install/strip"
+	@echo "... soni_average_vesc"
+	@echo "... rebuild_cache"
+	@echo "... soni_average"
 	@echo "... install/local"
 	@echo "... test"
 	@echo "... list_install_components"
-	@echo "... soni_average"
-	@echo "... install"
 	@echo "... edit_cache"
-	@echo "... rebuild_cache"
 	@echo "... src/soni_average.o"
 	@echo "... src/soni_average.i"
 	@echo "... src/soni_average.s"
+	@echo "... src/soni_average_vesc.o"
+	@echo "... src/soni_average_vesc.i"
+	@echo "... src/soni_average_vesc.s"
 .PHONY : help
 
 

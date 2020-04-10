@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  vesc_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -47,11 +48,13 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
-# add_message_files(
+#add_message_files(
 #   FILES
+#   VescState.msg
+#   VescStateStamped.msg
 #   Message1.msg
 #   Message2.msg
-# )
+#)
 
 ## Generate services in the 'srv' folder
 # add_service_files(
@@ -195,6 +198,9 @@ add_executable(soni_average src/soni_average.cpp)
 target_link_libraries(soni_average ${catkin_LIBRARIES})
 add_dependencies(soni_average soni_runtime_monitoring_generate_messages_cpp)
 
+add_executable(soni_average_vesc src/soni_average_vesc.cpp)
+target_link_libraries(soni_average_vesc ${catkin_LIBRARIES})
+add_dependencies(soni_average_vesc soni_runtime_monitoring_generate_messages_cpp)
 
 #############
 ## Testing ##

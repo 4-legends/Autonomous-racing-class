@@ -883,6 +883,19 @@ beginner_tutorials_generate_messages_cpp/fast:
 .PHONY : beginner_tutorials_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named soni_average_vesc
+
+# Build rule for target.
+soni_average_vesc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 soni_average_vesc
+.PHONY : soni_average_vesc
+
+# fast build rule for target.
+soni_average_vesc/fast:
+	$(MAKE) -f soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/build.make soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/build
+.PHONY : soni_average_vesc/fast
+
+#=============================================================================
 # Target rules for targets named soni_average
 
 # Build rule for target.
@@ -1678,6 +1691,7 @@ help:
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... _beginner_tutorials_generate_messages_check_deps_Num"
 	@echo "... beginner_tutorials_generate_messages_cpp"
+	@echo "... soni_average_vesc"
 	@echo "... soni_average"
 	@echo "... vesc_ackermann_nodelet"
 	@echo "... ackermann_to_vesc_node"

@@ -530,7 +530,7 @@ vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_py.dir/all: vesc/vesc_msgs
 vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_py.dir/all: vesc/vesc_msgs/CMakeFiles/_vesc_msgs_generate_messages_check_deps_VescStateStamped.dir/all
 	$(MAKE) -f vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_py.dir/build.make vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_py.dir/build.make vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles --progress-num=64,65,66 "Built target vesc_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles --progress-num=66,67,68 "Built target vesc_msgs_generate_messages_py"
 .PHONY : vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -669,7 +669,7 @@ vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_cpp.dir/all: vesc/vesc_msg
 vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_cpp.dir/all: vesc/vesc_msgs/CMakeFiles/_vesc_msgs_generate_messages_check_deps_VescStateStamped.dir/all
 	$(MAKE) -f vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_cpp.dir/build.make vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_cpp.dir/build.make vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles --progress-num=55,56 "Built target vesc_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles --progress-num=57,58 "Built target vesc_msgs_generate_messages_cpp"
 .PHONY : vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -863,7 +863,7 @@ vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_eus.dir/all: vesc/vesc_msg
 vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_eus.dir/all: vesc/vesc_msgs/CMakeFiles/_vesc_msgs_generate_messages_check_deps_VescStateStamped.dir/all
 	$(MAKE) -f vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_eus.dir/build.make vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_eus.dir/depend
 	$(MAKE) -f vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_eus.dir/build.make vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles --progress-num=57,58,59 "Built target vesc_msgs_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles --progress-num=59,60,61 "Built target vesc_msgs_generate_messages_eus"
 .PHONY : vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -897,7 +897,7 @@ vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_lisp.dir/all: vesc/vesc_ms
 vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_lisp.dir/all: vesc/vesc_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_lisp.dir/build.make vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_lisp.dir/build.make vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles --progress-num=60,61 "Built target vesc_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles --progress-num=62,63 "Built target vesc_msgs_generate_messages_lisp"
 .PHONY : vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1027,7 +1027,7 @@ vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_nodejs.dir/all: vesc/vesc_
 vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_nodejs.dir/all: vesc/vesc_msgs/CMakeFiles/_vesc_msgs_generate_messages_check_deps_VescStateStamped.dir/all
 	$(MAKE) -f vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_nodejs.dir/build.make vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_nodejs.dir/depend
 	$(MAKE) -f vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_nodejs.dir/build.make vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles --progress-num=62,63 "Built target vesc_msgs_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles --progress-num=64,65 "Built target vesc_msgs_generate_messages_nodejs"
 .PHONY : vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1213,7 +1213,7 @@ clean: beginner_tutorials/CMakeFiles/add_two_ints_server.dir/clean
 beginner_tutorials/CMakeFiles/talker.dir/all: beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.dir/all
 	$(MAKE) -f beginner_tutorials/CMakeFiles/talker.dir/build.make beginner_tutorials/CMakeFiles/talker.dir/depend
 	$(MAKE) -f beginner_tutorials/CMakeFiles/talker.dir/build.make beginner_tutorials/CMakeFiles/talker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles --progress-num=36,37 "Built target talker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles --progress-num=38,39 "Built target talker"
 .PHONY : beginner_tutorials/CMakeFiles/talker.dir/all
 
 # Include target in all.
@@ -2039,11 +2039,13 @@ clean: beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.di
 # Directory level rules for directory soni_runtime_monitoring
 
 # Convenience name for "all" pass in the directory.
+soni_runtime_monitoring/all: soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/all
 soni_runtime_monitoring/all: soni_runtime_monitoring/CMakeFiles/soni_average.dir/all
 
 .PHONY : soni_runtime_monitoring/all
 
 # Convenience name for "clean" pass in the directory.
+soni_runtime_monitoring/clean: soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/clean
 soni_runtime_monitoring/clean: soni_runtime_monitoring/CMakeFiles/soni_average.dir/clean
 
 .PHONY : soni_runtime_monitoring/clean
@@ -2052,6 +2054,43 @@ soni_runtime_monitoring/clean: soni_runtime_monitoring/CMakeFiles/soni_average.d
 soni_runtime_monitoring/preinstall:
 
 .PHONY : soni_runtime_monitoring/preinstall
+
+#=============================================================================
+# Target rules for target soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir
+
+# All Build rule for target.
+soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/all:
+	$(MAKE) -f soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/build.make soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/depend
+	$(MAKE) -f soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/build.make soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles --progress-num=36,37 "Built target soni_average_vesc"
+.PHONY : soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/all
+
+# Include target in all.
+all: soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles 0
+.PHONY : soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/rule
+
+# Convenience name for target.
+soni_average_vesc: soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/rule
+
+.PHONY : soni_average_vesc
+
+# clean rule for target.
+soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/clean:
+	$(MAKE) -f soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/build.make soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/clean
+.PHONY : soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/clean
+
+# clean rule for target.
+clean: soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target soni_runtime_monitoring/CMakeFiles/soni_average.dir
@@ -2238,7 +2277,7 @@ vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/all: vesc/vesc_ackerma
 vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/all: vesc/vesc_ackermann/CMakeFiles/actionlib_generate_messages_cpp.dir/all
 	$(MAKE) -f vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/build.make vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/depend
 	$(MAKE) -f vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/build.make vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles --progress-num=38,39,40,41,42 "Built target vesc_ackermann_nodelet"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles --progress-num=40,41,42,43,44 "Built target vesc_ackermann_nodelet"
 .PHONY : vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/all
 
 # Include target in all.
@@ -2450,7 +2489,7 @@ vesc/vesc_ackermann/CMakeFiles/vesc_to_odom_node.dir/all: vesc/vesc_ackermann/CM
 vesc/vesc_ackermann/CMakeFiles/vesc_to_odom_node.dir/all: vesc/vesc_ackermann/CMakeFiles/actionlib_generate_messages_cpp.dir/all
 	$(MAKE) -f vesc/vesc_ackermann/CMakeFiles/vesc_to_odom_node.dir/build.make vesc/vesc_ackermann/CMakeFiles/vesc_to_odom_node.dir/depend
 	$(MAKE) -f vesc/vesc_ackermann/CMakeFiles/vesc_to_odom_node.dir/build.make vesc/vesc_ackermann/CMakeFiles/vesc_to_odom_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles --progress-num=67,68,69 "Built target vesc_to_odom_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles --progress-num=69,70,71 "Built target vesc_to_odom_node"
 .PHONY : vesc/vesc_ackermann/CMakeFiles/vesc_to_odom_node.dir/all
 
 # Include target in all.
@@ -4136,7 +4175,7 @@ vesc/vesc_driver/CMakeFiles/vesc_driver_nodelet.dir/all: vesc/vesc_ackermann/CMa
 vesc/vesc_driver/CMakeFiles/vesc_driver_nodelet.dir/all: vesc/vesc_ackermann/CMakeFiles/nodelet_generate_messages_lisp.dir/all
 	$(MAKE) -f vesc/vesc_driver/CMakeFiles/vesc_driver_nodelet.dir/build.make vesc/vesc_driver/CMakeFiles/vesc_driver_nodelet.dir/depend
 	$(MAKE) -f vesc/vesc_driver/CMakeFiles/vesc_driver_nodelet.dir/build.make vesc/vesc_driver/CMakeFiles/vesc_driver_nodelet.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles --progress-num=49,50,51,52,53,54 "Built target vesc_driver_nodelet"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles --progress-num=51,52,53,54,55,56 "Built target vesc_driver_nodelet"
 .PHONY : vesc/vesc_driver/CMakeFiles/vesc_driver_nodelet.dir/all
 
 # Include target in all.
@@ -4202,7 +4241,7 @@ vesc/vesc_driver/CMakeFiles/vesc_driver_node.dir/all: vesc/vesc_ackermann/CMakeF
 vesc/vesc_driver/CMakeFiles/vesc_driver_node.dir/all: vesc/vesc_ackermann/CMakeFiles/nodelet_generate_messages_lisp.dir/all
 	$(MAKE) -f vesc/vesc_driver/CMakeFiles/vesc_driver_node.dir/build.make vesc/vesc_driver/CMakeFiles/vesc_driver_node.dir/depend
 	$(MAKE) -f vesc/vesc_driver/CMakeFiles/vesc_driver_node.dir/build.make vesc/vesc_driver/CMakeFiles/vesc_driver_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles --progress-num=43,44,45,46,47,48 "Built target vesc_driver_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles --progress-num=45,46,47,48,49,50 "Built target vesc_driver_node"
 .PHONY : vesc/vesc_driver/CMakeFiles/vesc_driver_node.dir/all
 
 # Include target in all.

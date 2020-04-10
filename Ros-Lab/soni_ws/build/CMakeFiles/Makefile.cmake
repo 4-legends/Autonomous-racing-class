@@ -354,6 +354,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "beginner_tutorials/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake"
   "beginner_tutorials/CMakeFiles/_beginner_tutorials_generate_messages_check_deps_Num.dir/DependInfo.cmake"
   "beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.dir/DependInfo.cmake"
+  "soni_runtime_monitoring/CMakeFiles/soni_average_vesc.dir/DependInfo.cmake"
   "soni_runtime_monitoring/CMakeFiles/soni_average.dir/DependInfo.cmake"
   "vesc/vesc_ackermann/CMakeFiles/vesc_ackermann_nodelet.dir/DependInfo.cmake"
   "vesc/vesc_ackermann/CMakeFiles/ackermann_to_vesc_node.dir/DependInfo.cmake"
