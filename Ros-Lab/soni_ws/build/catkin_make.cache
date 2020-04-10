@@ -1,2 +1,2 @@
-beginner_tutorials
--DCATKIN_DEVEL_PREFIX=/home/paresh/Autonomous_racing/soni_ws/devel -DCMAKE_INSTALL_PREFIX=/home/paresh/Autonomous_racing/soni_ws/install -G Unix Makefiles
+beginner_tutorials:soni_runtime_monitoring
+-DCATKIN_DEVEL_PREFIX=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/devel -DCMAKE_INSTALL_PREFIX=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/install -G Unix Makefiles

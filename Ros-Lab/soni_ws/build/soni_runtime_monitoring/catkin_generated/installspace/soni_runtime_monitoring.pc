@@ -1,0 +1,8 @@
+prefix=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/install
+
+Name: soni_runtime_monitoring
+Description: Description of soni_runtime_monitoring
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

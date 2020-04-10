@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/paresh/Autonomous_racing/soni_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

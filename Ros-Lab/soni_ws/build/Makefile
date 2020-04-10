@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/paresh/Autonomous_racing/soni_ws/src
+CMAKE_SOURCE_DIR = /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paresh/Autonomous_racing/soni_ws/build
+CMAKE_BINARY_DIR = /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paresh/Autonomous_racing/soni_ws/build/CMakeFiles /home/paresh/Autonomous_racing/soni_ws/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paresh/Autonomous_racing/soni_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -700,6 +700,19 @@ roscpp_generate_messages_cpp/fast:
 	$(MAKE) -f beginner_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make beginner_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
+#=============================================================================
+# Target rules for targets named soni_average
+
+# Build rule for target.
+soni_average: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 soni_average
+.PHONY : soni_average
+
+# fast build rule for target.
+soni_average/fast:
+	$(MAKE) -f soni_runtime_monitoring/CMakeFiles/soni_average.dir/build.make soni_runtime_monitoring/CMakeFiles/soni_average.dir/build
+.PHONY : soni_average/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -754,6 +767,7 @@ help:
 	@echo "... add_two_ints_server"
 	@echo "... add_two_ints_client"
 	@echo "... roscpp_generate_messages_cpp"
+	@echo "... soni_average"
 .PHONY : help
 
 

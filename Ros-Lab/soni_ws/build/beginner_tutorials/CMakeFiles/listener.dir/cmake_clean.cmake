@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/listener.dir/src/listener.cpp.o"
-  "/home/paresh/Autonomous_racing/soni_ws/devel/lib/beginner_tutorials/listener.pdb"
-  "/home/paresh/Autonomous_racing/soni_ws/devel/lib/beginner_tutorials/listener"
+  "/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/devel/lib/beginner_tutorials/listener.pdb"
+  "/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/devel/lib/beginner_tutorials/listener"
 )
 
 # Per-language clean rules from dependency scanning.

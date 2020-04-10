@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/beginner_tutorials_generate_messages_nodejs"
-  "/home/paresh/Autonomous_racing/soni_ws/devel/share/gennodejs/ros/beginner_tutorials/msg/Num.js"
-  "/home/paresh/Autonomous_racing/soni_ws/devel/share/gennodejs/ros/beginner_tutorials/srv/AddTwoInts.js"
+  "/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/devel/share/gennodejs/ros/beginner_tutorials/msg/Num.js"
+  "/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/devel/share/gennodejs/ros/beginner_tutorials/srv/AddTwoInts.js"
 )
 
 # Per-language clean rules from dependency scanning.

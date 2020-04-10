@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/paresh/Autonomous_racing/soni_ws/src
+CMAKE_SOURCE_DIR = /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/paresh/Autonomous_racing/soni_ws/build
+CMAKE_BINARY_DIR = /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build
 
 # Utility rule file for roscpp_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ beginner_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/build: roscpp_gen
 .PHONY : beginner_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 
 beginner_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
-	cd /home/paresh/Autonomous_racing/soni_ws/build/beginner_tutorials && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/beginner_tutorials && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : beginner_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 
 beginner_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/depend:
-	cd /home/paresh/Autonomous_racing/soni_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paresh/Autonomous_racing/soni_ws/src /home/paresh/Autonomous_racing/soni_ws/src/beginner_tutorials /home/paresh/Autonomous_racing/soni_ws/build /home/paresh/Autonomous_racing/soni_ws/build/beginner_tutorials /home/paresh/Autonomous_racing/soni_ws/build/beginner_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/src /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/src/beginner_tutorials /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/beginner_tutorials /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/beginner_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : beginner_tutorials/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
 

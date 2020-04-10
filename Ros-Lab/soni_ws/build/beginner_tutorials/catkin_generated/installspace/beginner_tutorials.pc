@@ -1,4 +1,4 @@
-prefix=/home/paresh/Autonomous_racing/soni_ws/install
+prefix=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/install
 
 Name: beginner_tutorials
 Description: Description of beginner_tutorials

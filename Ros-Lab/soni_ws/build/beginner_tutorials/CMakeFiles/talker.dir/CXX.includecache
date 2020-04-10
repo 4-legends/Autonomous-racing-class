@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/paresh/Autonomous_racing/soni_ws/src/beginner_tutorials/src/talker.cpp
+/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/src/beginner_tutorials/src/talker.cpp
 ros/ros.h
-/home/paresh/Autonomous_racing/soni_ws/src/beginner_tutorials/src/ros/ros.h
+/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/src/beginner_tutorials/src/ros/ros.h
 std_msgs/String.h
-/home/paresh/Autonomous_racing/soni_ws/src/beginner_tutorials/src/std_msgs/String.h
+/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/src/beginner_tutorials/src/std_msgs/String.h
 sstream
 -
 
