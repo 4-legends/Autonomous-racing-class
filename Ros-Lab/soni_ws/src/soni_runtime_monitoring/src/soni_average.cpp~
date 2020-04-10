@@ -1,5 +1,6 @@
 #include "ros/ros.h"
 #include "geometry_msgs/Twist.h"
+#include "std_msgs/Float64.h"
 #include <sstream>
 
 
@@ -51,7 +52,7 @@ int main(int argc, char **argv)
    * away the oldest ones.
    */
     ros::Subscriber sub = n.subscribe("/turtle1/cmd_vel", 100, chatterCallback);
-	ros::Publisher chatter_pub = n.advertise<geometry_msgs::Twist>("/average_velocity", 100);
+	ros::Publisher chatter_pub = n.advertise<std_msgs::Float64>("/average_velocity", 100);
 	ros::Rate loop_rate(5);
   /**
    * A count of how many messages we have sent. This is used to create
@@ -60,7 +61,7 @@ int main(int argc, char **argv)
   //int count = 0;
   int number = 0;
   int list [10] = {0};
-  geometry_msgs::Twist msgavg;
+  std_msgs::Float64 msgavg;
   while (ros::ok())
   {    
     if (flag == false)
@@ -78,7 +79,7 @@ int main(int argc, char **argv)
     }
     average = average/10;
     //ROS_INFO("I heard velocity[%f]", average);
-	msgavg.linear.x = average;
+	msgavg.data = average;
     /**
      * The publish() function is how you send messages. The parameter
      * is the message object. The type of this object must agree with the type
