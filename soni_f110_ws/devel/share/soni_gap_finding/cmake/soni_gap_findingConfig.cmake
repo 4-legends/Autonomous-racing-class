@@ -214,7 +214,7 @@ foreach(depend ${depends})
   list(APPEND soni_gap_finding_EXPORTED_TARGETS ${${soni_gap_finding_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "soni_gap_finding-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${soni_gap_finding_DIR}/${extra})

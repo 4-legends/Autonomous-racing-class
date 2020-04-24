@@ -510,6 +510,12 @@ lab_pure_pursuit_BINARY_DIR:STATIC=/home/paresh/Autonomous_racing/soni_f110_ws/b
 //Value Computed by CMake
 lab_pure_pursuit_SOURCE_DIR:STATIC=/home/paresh/Autonomous_racing/soni_f110_ws/src/f110-skeletons-spring2020/labs/lab_pure_pursuit
 
+//Value Computed by CMake
+lab_scan_matching_BINARY_DIR:STATIC=/home/paresh/Autonomous_racing/soni_f110_ws/build/f110-skeletons-spring2020/labs/lab_scan_matching
+
+//Value Computed by CMake
+lab_scan_matching_SOURCE_DIR:STATIC=/home/paresh/Autonomous_racing/soni_f110_ws/src/f110-skeletons-spring2020/labs/lab_scan_matching
+
 //Path to a library.
 lib:FILEPATH=/opt/ros/melodic/lib/libtf2.so
 
@@ -641,6 +647,12 @@ soni_gap_finding_BINARY_DIR:STATIC=/home/paresh/Autonomous_racing/soni_f110_ws/b
 
 //Value Computed by CMake
 soni_gap_finding_SOURCE_DIR:STATIC=/home/paresh/Autonomous_racing/soni_f110_ws/src/soni_gap_finding
+
+//Value Computed by CMake
+soni_wall_following_BINARY_DIR:STATIC=/home/paresh/Autonomous_racing/soni_f110_ws/build/soni_wall_following
+
+//Value Computed by CMake
+soni_wall_following_SOURCE_DIR:STATIC=/home/paresh/Autonomous_racing/soni_f110_ws/src/soni_wall_following
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/melodic/share/std_msgs/cmake
@@ -858,7 +870,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=27
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=29
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

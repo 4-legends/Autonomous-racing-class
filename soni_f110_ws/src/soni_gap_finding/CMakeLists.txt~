@@ -55,6 +55,7 @@ add_message_files(
 #   Message2.msg
 )
 
+generate_messages(DEPENDENCIES std_msgs)
 ## Generate services in the 'srv' folder
 # add_service_files(
 #   FILES

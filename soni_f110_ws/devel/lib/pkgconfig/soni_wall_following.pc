@@ -1,0 +1,8 @@
+prefix=/home/paresh/Autonomous_racing/soni_f110_ws/devel
+
+Name: soni_wall_following
+Description: Description of soni_wall_following
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
