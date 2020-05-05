@@ -99,7 +99,7 @@ def scan_callback(data):
 
 # Boilerplate code to start this ROS node.
 if __name__ == '__main__':
-	rospy.init_node('gap_finding_node', anonymous=True)
+	rospy.init_node('soni_gap_finding_node', anonymous=True)
 	rospy.Subscriber("scan", LaserScan, scan_callback)
 	rospy.spin()
 
