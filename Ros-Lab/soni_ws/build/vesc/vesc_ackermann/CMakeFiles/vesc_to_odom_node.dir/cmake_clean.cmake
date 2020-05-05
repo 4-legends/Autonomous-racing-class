@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/vesc_to_odom_node.dir/src/vesc_to_odom_node.cpp.o"
   "CMakeFiles/vesc_to_odom_node.dir/src/vesc_to_odom.cpp.o"
-  "/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/devel/lib/vesc_ackermann/vesc_to_odom_node.pdb"
-  "/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/devel/lib/vesc_ackermann/vesc_to_odom_node"
+  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/devel/lib/vesc_ackermann/vesc_to_odom_node.pdb"
+  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/devel/lib/vesc_ackermann/vesc_to_odom_node"
 )
 
 # Per-language clean rules from dependency scanning.

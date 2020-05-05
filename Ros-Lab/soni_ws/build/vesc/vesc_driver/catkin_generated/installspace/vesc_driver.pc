@@ -1,4 +1,4 @@
-prefix=/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/install
+prefix=/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/install
 
 Name: vesc_driver
 Description: Description of vesc_driver

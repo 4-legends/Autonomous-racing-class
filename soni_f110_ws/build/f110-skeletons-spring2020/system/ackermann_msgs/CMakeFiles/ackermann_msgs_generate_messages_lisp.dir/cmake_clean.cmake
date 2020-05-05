@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ackermann_msgs_generate_messages_lisp"
-  "/home/paresh/Autonomous_racing/soni_f110_ws/devel/share/common-lisp/ros/ackermann_msgs/msg/AckermannDriveStamped.lisp"
-  "/home/paresh/Autonomous_racing/soni_f110_ws/devel/share/common-lisp/ros/ackermann_msgs/msg/AckermannDrive.lisp"
+  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/share/common-lisp/ros/ackermann_msgs/msg/AckermannDriveStamped.lisp"
+  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/share/common-lisp/ros/ackermann_msgs/msg/AckermannDrive.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

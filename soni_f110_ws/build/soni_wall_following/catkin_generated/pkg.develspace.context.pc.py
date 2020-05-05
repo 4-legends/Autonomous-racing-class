@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "soni_wall_following"
-PROJECT_SPACE_DIR = "/home/paresh/Autonomous_racing/soni_f110_ws/devel"
+PROJECT_SPACE_DIR = "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel"
 PROJECT_VERSION = "0.0.0"

@@ -1,8 +1,8 @@
-# Install script for directory: /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/src/soni_runtime_monitoring
+# Install script for directory: /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/src/soni_runtime_monitoring
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,23 +32,18 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-# Is this installation the result of a crosscompile?
-if(NOT DEFINED CMAKE_CROSSCOMPILING)
-  set(CMAKE_CROSSCOMPILING "FALSE")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/build/soni_runtime_monitoring/catkin_generated/installspace/soni_runtime_monitoring.pc")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/soni_runtime_monitoring/catkin_generated/installspace/soni_runtime_monitoring.pc")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/soni_runtime_monitoring/cmake" TYPE FILE FILES
-    "/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/soni_runtime_monitoring/catkin_generated/installspace/soni_runtime_monitoringConfig.cmake"
-    "/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build/soni_runtime_monitoring/catkin_generated/installspace/soni_runtime_monitoringConfig-version.cmake"
+    "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/build/soni_runtime_monitoring/catkin_generated/installspace/soni_runtime_monitoringConfig.cmake"
+    "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/build/soni_runtime_monitoring/catkin_generated/installspace/soni_runtime_monitoringConfig-version.cmake"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/soni_runtime_monitoring" TYPE FILE FILES "/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/src/soni_runtime_monitoring/package.xml")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/soni_runtime_monitoring" TYPE FILE FILES "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/src/soni_runtime_monitoring/package.xml")
 endif()
 

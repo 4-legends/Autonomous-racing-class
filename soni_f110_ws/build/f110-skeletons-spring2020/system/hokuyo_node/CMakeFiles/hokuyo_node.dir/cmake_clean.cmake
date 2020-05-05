@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/hokuyo_node.dir/src/hokuyo_node.cpp.o"
-  "/home/paresh/Autonomous_racing/soni_f110_ws/devel/lib/hokuyo_node/hokuyo_node.pdb"
-  "/home/paresh/Autonomous_racing/soni_f110_ws/devel/lib/hokuyo_node/hokuyo_node"
+  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/hokuyo_node/hokuyo_node.pdb"
+  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/hokuyo_node/hokuyo_node"
 )
 
 # Per-language clean rules from dependency scanning.

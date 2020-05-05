@@ -67,14 +67,14 @@ set(serial_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(serial_SOURCE_PREFIX /home/paresh/Autonomous_racing/soni_f110_ws/src/f110-skeletons-spring2020/system/serial)
-  set(serial_DEVEL_PREFIX /home/paresh/Autonomous_racing/soni_f110_ws/devel)
+  set(serial_SOURCE_PREFIX /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/serial)
+  set(serial_DEVEL_PREFIX /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel)
   set(serial_INSTALL_PREFIX "")
   set(serial_PREFIX ${serial_DEVEL_PREFIX})
 else()
   set(serial_SOURCE_PREFIX "")
   set(serial_DEVEL_PREFIX "")
-  set(serial_INSTALL_PREFIX /home/paresh/Autonomous_racing/soni_f110_ws/install)
+  set(serial_INSTALL_PREFIX /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/install)
   set(serial_PREFIX ${serial_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/paresh/Autonomous_racing/soni_f110_ws/install/lib;/home/paresh/Autonomous_racing/soni_f110_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/install/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

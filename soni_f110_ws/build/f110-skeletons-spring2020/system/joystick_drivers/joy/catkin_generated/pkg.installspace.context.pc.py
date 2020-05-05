@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "roscpp;diagnostic_updater;sensor_msgs".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "joy"
-PROJECT_SPACE_DIR = "/home/paresh/Autonomous_racing/soni_f110_ws/install"
+PROJECT_SPACE_DIR = "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/install"
 PROJECT_VERSION = "1.12.0"

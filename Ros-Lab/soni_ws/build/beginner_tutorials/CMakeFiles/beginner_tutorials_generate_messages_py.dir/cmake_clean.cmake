@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/beginner_tutorials_generate_messages_py"
-  "/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/msg/_Num.py"
-  "/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/srv/_AddTwoInts.py"
-  "/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/msg/__init__.py"
-  "/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/srv/__init__.py"
+  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/msg/_Num.py"
+  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/srv/_AddTwoInts.py"
+  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/msg/__init__.py"
+  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/srv/__init__.py"
 )
 
 # Per-language clean rules from dependency scanning.

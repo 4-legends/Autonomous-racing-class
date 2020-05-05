@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/vesc_msgs_generate_messages_lisp"
-  "/home/paresh/Autonomous_racing/soni_f110_ws/devel/share/common-lisp/ros/vesc_msgs/msg/VescStateStamped.lisp"
-  "/home/paresh/Autonomous_racing/soni_f110_ws/devel/share/common-lisp/ros/vesc_msgs/msg/VescState.lisp"
+  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/share/common-lisp/ros/vesc_msgs/msg/VescStateStamped.lisp"
+  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/share/common-lisp/ros/vesc_msgs/msg/VescState.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

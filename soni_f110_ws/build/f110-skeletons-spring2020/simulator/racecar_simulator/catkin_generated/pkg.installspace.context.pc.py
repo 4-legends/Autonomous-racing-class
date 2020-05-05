@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "message_runtime".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lracecar_simulator".split(';') if "-lracecar_simulator" != "" else []
 PROJECT_NAME = "racecar_simulator"
-PROJECT_SPACE_DIR = "/home/paresh/Autonomous_racing/soni_f110_ws/install"
+PROJECT_SPACE_DIR = "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/install"
 PROJECT_VERSION = "0.0.0"

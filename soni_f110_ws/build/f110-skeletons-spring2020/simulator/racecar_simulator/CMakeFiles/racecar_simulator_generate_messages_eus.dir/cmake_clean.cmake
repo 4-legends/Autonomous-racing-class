@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/racecar_simulator_generate_messages_eus"
-  "/home/paresh/Autonomous_racing/soni_f110_ws/devel/share/roseus/ros/racecar_simulator/manifest.l"
+  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/share/roseus/ros/racecar_simulator/manifest.l"
 )
 
 # Per-language clean rules from dependency scanning.

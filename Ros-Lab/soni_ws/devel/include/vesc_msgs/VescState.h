@@ -98,29 +98,6 @@ struct VescState_
 
 
 
-// reducing the odds to have name collisions with Windows.h 
-#if defined(_WIN32) && defined(FAULT_CODE_NONE)
-  #undef FAULT_CODE_NONE
-#endif
-#if defined(_WIN32) && defined(FAULT_CODE_OVER_VOLTAGE)
-  #undef FAULT_CODE_OVER_VOLTAGE
-#endif
-#if defined(_WIN32) && defined(FAULT_CODE_UNDER_VOLTAGE)
-  #undef FAULT_CODE_UNDER_VOLTAGE
-#endif
-#if defined(_WIN32) && defined(FAULT_CODE_DRV8302)
-  #undef FAULT_CODE_DRV8302
-#endif
-#if defined(_WIN32) && defined(FAULT_CODE_ABS_OVER_CURRENT)
-  #undef FAULT_CODE_ABS_OVER_CURRENT
-#endif
-#if defined(_WIN32) && defined(FAULT_CODE_OVER_TEMP_FET)
-  #undef FAULT_CODE_OVER_TEMP_FET
-#endif
-#if defined(_WIN32) && defined(FAULT_CODE_OVER_TEMP_MOTOR)
-  #undef FAULT_CODE_OVER_TEMP_MOTOR
-#endif
-
   enum {
     FAULT_CODE_NONE = 0,
     FAULT_CODE_OVER_VOLTAGE = 1,
@@ -167,32 +144,6 @@ ros::message_operations::Printer< ::vesc_msgs::VescState_<ContainerAllocator> >:
 return s;
 }
 
-
-template<typename ContainerAllocator1, typename ContainerAllocator2>
-bool operator==(const ::vesc_msgs::VescState_<ContainerAllocator1> & lhs, const ::vesc_msgs::VescState_<ContainerAllocator2> & rhs)
-{
-  return lhs.voltage_input == rhs.voltage_input &&
-    lhs.temperature_pcb == rhs.temperature_pcb &&
-    lhs.current_motor == rhs.current_motor &&
-    lhs.current_input == rhs.current_input &&
-    lhs.speed == rhs.speed &&
-    lhs.duty_cycle == rhs.duty_cycle &&
-    lhs.charge_drawn == rhs.charge_drawn &&
-    lhs.charge_regen == rhs.charge_regen &&
-    lhs.energy_drawn == rhs.energy_drawn &&
-    lhs.energy_regen == rhs.energy_regen &&
-    lhs.displacement == rhs.displacement &&
-    lhs.distance_traveled == rhs.distance_traveled &&
-    lhs.fault_code == rhs.fault_code;
-}
-
-template<typename ContainerAllocator1, typename ContainerAllocator2>
-bool operator!=(const ::vesc_msgs::VescState_<ContainerAllocator1> & lhs, const ::vesc_msgs::VescState_<ContainerAllocator2> & rhs)
-{
-  return !(lhs == rhs);
-}
-
-
 } // namespace vesc_msgs
 
 namespace ros
@@ -200,6 +151,12 @@ namespace ros
 namespace message_traits
 {
 
+
+
+// BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
+// {'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'vesc_msgs': ['/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/src/vesc/vesc_msgs/msg']}
+
+// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
 
 
 
@@ -264,31 +221,31 @@ struct Definition< ::vesc_msgs::VescState_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "# Vedder VESC open source motor controller state (telemetry)\n"
-"\n"
-"# fault codes\n"
-"int32 FAULT_CODE_NONE=0\n"
-"int32 FAULT_CODE_OVER_VOLTAGE=1\n"
-"int32 FAULT_CODE_UNDER_VOLTAGE=2\n"
-"int32 FAULT_CODE_DRV8302=3\n"
-"int32 FAULT_CODE_ABS_OVER_CURRENT=4\n"
-"int32 FAULT_CODE_OVER_TEMP_FET=5\n"
-"int32 FAULT_CODE_OVER_TEMP_MOTOR=6\n"
-"\n"
-"float64 voltage_input        # input voltage (volt)\n"
-"float64 temperature_pcb      # temperature of printed circuit board (degrees Celsius)\n"
-"float64 current_motor        # motor current (ampere)\n"
-"float64 current_input        # input current (ampere)\n"
-"float64 speed                # motor electrical speed (revolutions per minute) \n"
-"float64 duty_cycle           # duty cycle (0 to 1)\n"
-"float64 charge_drawn         # electric charge drawn from input (ampere-hour)\n"
-"float64 charge_regen         # electric charge regenerated to input (ampere-hour)\n"
-"float64 energy_drawn         # energy drawn from input (watt-hour)\n"
-"float64 energy_regen         # energy regenerated to input (watt-hour)\n"
-"float64 displacement         # net tachometer (counts)\n"
-"float64 distance_traveled    # total tachnometer (counts)\n"
-"int32   fault_code\n"
-;
+    return "# Vedder VESC open source motor controller state (telemetry)\n\
+\n\
+# fault codes\n\
+int32 FAULT_CODE_NONE=0\n\
+int32 FAULT_CODE_OVER_VOLTAGE=1\n\
+int32 FAULT_CODE_UNDER_VOLTAGE=2\n\
+int32 FAULT_CODE_DRV8302=3\n\
+int32 FAULT_CODE_ABS_OVER_CURRENT=4\n\
+int32 FAULT_CODE_OVER_TEMP_FET=5\n\
+int32 FAULT_CODE_OVER_TEMP_MOTOR=6\n\
+\n\
+float64 voltage_input        # input voltage (volt)\n\
+float64 temperature_pcb      # temperature of printed circuit board (degrees Celsius)\n\
+float64 current_motor        # motor current (ampere)\n\
+float64 current_input        # input current (ampere)\n\
+float64 speed                # motor electrical speed (revolutions per minute) \n\
+float64 duty_cycle           # duty cycle (0 to 1)\n\
+float64 charge_drawn         # electric charge drawn from input (ampere-hour)\n\
+float64 charge_regen         # electric charge regenerated to input (ampere-hour)\n\
+float64 energy_drawn         # energy drawn from input (watt-hour)\n\
+float64 energy_regen         # energy regenerated to input (watt-hour)\n\
+float64 displacement         # net tachometer (counts)\n\
+float64 distance_traveled    # total tachnometer (counts)\n\
+int32   fault_code\n\
+";
   }
 
   static const char* value(const ::vesc_msgs::VescState_<ContainerAllocator>&) { return value(); }

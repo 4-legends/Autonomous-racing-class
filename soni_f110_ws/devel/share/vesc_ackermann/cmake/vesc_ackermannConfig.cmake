@@ -67,14 +67,14 @@ set(vesc_ackermann_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(vesc_ackermann_SOURCE_PREFIX /home/paresh/Autonomous_racing/soni_f110_ws/src/f110-skeletons-spring2020/system/vesc/vesc_ackermann)
-  set(vesc_ackermann_DEVEL_PREFIX /home/paresh/Autonomous_racing/soni_f110_ws/devel)
+  set(vesc_ackermann_SOURCE_PREFIX /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/vesc/vesc_ackermann)
+  set(vesc_ackermann_DEVEL_PREFIX /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel)
   set(vesc_ackermann_INSTALL_PREFIX "")
   set(vesc_ackermann_PREFIX ${vesc_ackermann_DEVEL_PREFIX})
 else()
   set(vesc_ackermann_SOURCE_PREFIX "")
   set(vesc_ackermann_DEVEL_PREFIX "")
-  set(vesc_ackermann_INSTALL_PREFIX /home/paresh/Autonomous_racing/soni_f110_ws/install)
+  set(vesc_ackermann_INSTALL_PREFIX /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/install)
   set(vesc_ackermann_PREFIX ${vesc_ackermann_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(vesc_ackermann_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/paresh/Autonomous_racing/soni_f110_ws/src/f110-skeletons-spring2020/system/vesc/vesc_ackermann/include " STREQUAL " ")
+if(NOT "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/vesc/vesc_ackermann/include " STREQUAL " ")
   set(vesc_ackermann_INCLUDE_DIRS "")
-  set(_include_dirs "/home/paresh/Autonomous_racing/soni_f110_ws/src/f110-skeletons-spring2020/system/vesc/vesc_ackermann/include")
+  set(_include_dirs "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/vesc/vesc_ackermann/include")
   if(NOT "https://github.mit.edu/racecar/racecar-iap/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.mit.edu/racecar/racecar-iap/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://www.ros.org/wiki/vesc_ackermann " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/paresh/Autonomous_racing/soni_f110_ws/src/f110-skeletons-spring202
         message(FATAL_ERROR "Project 'vesc_ackermann' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'vesc_ackermann' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/paresh/Autonomous_racing/soni_f110_ws/src/f110-skeletons-spring2020/system/vesc/vesc_ackermann/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'vesc_ackermann' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/vesc/vesc_ackermann/${idir}'.  ${_report}")
     endif()
     _list_append_unique(vesc_ackermann_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/paresh/Autonomous_racing/soni_f110_ws/devel/lib;/home/paresh/Autonomous_racing/soni_f110_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

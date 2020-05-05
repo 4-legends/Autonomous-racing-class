@@ -1,4 +1,4 @@
-prefix=/home/paresh/Autonomous_racing/soni_f110_ws/devel
+prefix=/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel
 
 Name: racecar_control
 Description: Description of racecar_control

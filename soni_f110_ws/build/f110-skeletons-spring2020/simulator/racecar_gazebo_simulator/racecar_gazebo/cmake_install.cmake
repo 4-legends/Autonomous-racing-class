@@ -1,8 +1,8 @@
-# Install script for directory: /home/paresh/Autonomous_racing/soni_f110_ws/src/f110-skeletons-spring2020/simulator/racecar_gazebo_simulator/racecar_gazebo
+# Install script for directory: /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/simulator/racecar_gazebo_simulator/racecar_gazebo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/paresh/Autonomous_racing/soni_f110_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,23 +32,18 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-# Is this installation the result of a crosscompile?
-if(NOT DEFINED CMAKE_CROSSCOMPILING)
-  set(CMAKE_CROSSCOMPILING "FALSE")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/build/f110-skeletons-spring2020/simulator/racecar_gazebo_simulator/racecar_gazebo/catkin_generated/installspace/racecar_gazebo.pc")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/paresh/Autonomous_racing/soni_f110_ws/build/f110-skeletons-spring2020/simulator/racecar_gazebo_simulator/racecar_gazebo/catkin_generated/installspace/racecar_gazebo.pc")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/racecar_gazebo/cmake" TYPE FILE FILES
-    "/home/paresh/Autonomous_racing/soni_f110_ws/build/f110-skeletons-spring2020/simulator/racecar_gazebo_simulator/racecar_gazebo/catkin_generated/installspace/racecar_gazeboConfig.cmake"
-    "/home/paresh/Autonomous_racing/soni_f110_ws/build/f110-skeletons-spring2020/simulator/racecar_gazebo_simulator/racecar_gazebo/catkin_generated/installspace/racecar_gazeboConfig-version.cmake"
+    "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/build/f110-skeletons-spring2020/simulator/racecar_gazebo_simulator/racecar_gazebo/catkin_generated/installspace/racecar_gazeboConfig.cmake"
+    "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/build/f110-skeletons-spring2020/simulator/racecar_gazebo_simulator/racecar_gazebo/catkin_generated/installspace/racecar_gazeboConfig-version.cmake"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/racecar_gazebo" TYPE FILE FILES "/home/paresh/Autonomous_racing/soni_f110_ws/src/f110-skeletons-spring2020/simulator/racecar_gazebo_simulator/racecar_gazebo/package.xml")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/racecar_gazebo" TYPE FILE FILES "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/simulator/racecar_gazebo_simulator/racecar_gazebo/package.xml")
 endif()
 

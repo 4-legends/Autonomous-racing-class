@@ -57,8 +57,8 @@ struct DataType< ::beginner_tutorials::AddTwoInts > {
 };
 
 
-// service_traits::MD5Sum< ::beginner_tutorials::AddTwoIntsRequest> should match
-// service_traits::MD5Sum< ::beginner_tutorials::AddTwoInts >
+// service_traits::MD5Sum< ::beginner_tutorials::AddTwoIntsRequest> should match 
+// service_traits::MD5Sum< ::beginner_tutorials::AddTwoInts > 
 template<>
 struct MD5Sum< ::beginner_tutorials::AddTwoIntsRequest>
 {
@@ -72,8 +72,8 @@ struct MD5Sum< ::beginner_tutorials::AddTwoIntsRequest>
   }
 };
 
-// service_traits::DataType< ::beginner_tutorials::AddTwoIntsRequest> should match
-// service_traits::DataType< ::beginner_tutorials::AddTwoInts >
+// service_traits::DataType< ::beginner_tutorials::AddTwoIntsRequest> should match 
+// service_traits::DataType< ::beginner_tutorials::AddTwoInts > 
 template<>
 struct DataType< ::beginner_tutorials::AddTwoIntsRequest>
 {
@@ -87,8 +87,8 @@ struct DataType< ::beginner_tutorials::AddTwoIntsRequest>
   }
 };
 
-// service_traits::MD5Sum< ::beginner_tutorials::AddTwoIntsResponse> should match
-// service_traits::MD5Sum< ::beginner_tutorials::AddTwoInts >
+// service_traits::MD5Sum< ::beginner_tutorials::AddTwoIntsResponse> should match 
+// service_traits::MD5Sum< ::beginner_tutorials::AddTwoInts > 
 template<>
 struct MD5Sum< ::beginner_tutorials::AddTwoIntsResponse>
 {
@@ -102,8 +102,8 @@ struct MD5Sum< ::beginner_tutorials::AddTwoIntsResponse>
   }
 };
 
-// service_traits::DataType< ::beginner_tutorials::AddTwoIntsResponse> should match
-// service_traits::DataType< ::beginner_tutorials::AddTwoInts >
+// service_traits::DataType< ::beginner_tutorials::AddTwoIntsResponse> should match 
+// service_traits::DataType< ::beginner_tutorials::AddTwoInts > 
 template<>
 struct DataType< ::beginner_tutorials::AddTwoIntsResponse>
 {

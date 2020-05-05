@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/beginner_tutorials_generate_messages_lisp"
-  "/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/devel/share/common-lisp/ros/beginner_tutorials/msg/Num.lisp"
-  "/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/devel/share/common-lisp/ros/beginner_tutorials/srv/AddTwoInts.lisp"
+  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/devel/share/common-lisp/ros/beginner_tutorials/msg/Num.lisp"
+  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/devel/share/common-lisp/ros/beginner_tutorials/srv/AddTwoInts.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

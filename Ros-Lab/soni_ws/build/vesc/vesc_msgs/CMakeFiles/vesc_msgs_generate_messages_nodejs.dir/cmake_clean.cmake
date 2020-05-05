@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/vesc_msgs_generate_messages_nodejs"
-  "/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/devel/share/gennodejs/ros/vesc_msgs/msg/VescStateStamped.js"
-  "/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/devel/share/gennodejs/ros/vesc_msgs/msg/VescState.js"
+  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/devel/share/gennodejs/ros/vesc_msgs/msg/VescStateStamped.js"
+  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/devel/share/gennodejs/ros/vesc_msgs/msg/VescState.js"
 )
 
 # Per-language clean rules from dependency scanning.

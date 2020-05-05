@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/mux.dir/node/mux.cpp.o"
-  "/home/paresh/Autonomous_racing/soni_f110_ws/devel/lib/racecar_simulator/mux.pdb"
-  "/home/paresh/Autonomous_racing/soni_f110_ws/devel/lib/racecar_simulator/mux"
+  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/racecar_simulator/mux.pdb"
+  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/racecar_simulator/mux"
 )
 
 # Per-language clean rules from dependency scanning.

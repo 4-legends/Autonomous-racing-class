@@ -7,11 +7,8 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/opt/ros/melodic/share/euslisp/jskeus/eus//Linux64/lib:/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/devel/lib:/opt/ros/melodic/lib:/opt/ros/melodic/share/euslisp/jskeus/eus//Linux64/lib:/home/paresh/.mujoco/mjpro150/bin:/opt/ros/melodic/share/euslisp/jskeus/eus//Linux64/lib:/opt/ros/melodic/share/euslisp/jskeus/eus//Linux64/lib:/opt/ros/melodic/share/euslisp/jskeus/eus//Linux64/lib:/opt/ros/melodic/share/euslisp/jskeus/eus//Linux64/lib:/home/paresh/.mujoco/mujoco200/bin"
-export PATH="/opt/ros/melodic/share/euslisp/jskeus/eus//Linux64/bin:/opt/ros/melodic/bin:/opt/ros/melodic/share/euslisp/jskeus/eus//Linux64/bin:/opt/ros/melodic/share/euslisp/jskeus/eus//Linux64/bin:/opt/ros/melodic/share/euslisp/jskeus/eus//Linux64/bin:/opt/ros/melodic/share/euslisp/jskeus/eus//Linux64/bin:/opt/ros/melodic/share/euslisp/jskeus/eus//Linux64/bin:/home/paresh/anaconda2/condabin:/home/paresh/bin:/home/paresh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
-export PKG_CONFIG_PATH="/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD="/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/build"
-export PYTHONPATH="/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/devel:$CMAKE_PREFIX_PATH"
+export PATH="/opt/ros/kinetic/bin:/home/graspinglab/anaconda3/bin:/home/graspinglab/anaconda3/condabin:/home/graspinglab/bin:/home/graspinglab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+export PWD="/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/src:$ROS_PACKAGE_PATH"

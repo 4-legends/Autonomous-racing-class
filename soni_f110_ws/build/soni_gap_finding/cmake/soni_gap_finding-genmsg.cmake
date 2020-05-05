@@ -2,7 +2,7 @@
 
 message(STATUS "soni_gap_finding: 1 messages, 0 services")
 
-set(MSG_I_FLAGS "-Isoni_gap_finding:/home/paresh/Autonomous_racing/soni_f110_ws/src/soni_gap_finding/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Isoni_gap_finding:/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/soni_gap_finding/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 
@@ -12,9 +12,9 @@ add_custom_target(soni_gap_finding_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/paresh/Autonomous_racing/soni_f110_ws/src/soni_gap_finding/msg/lidar_gaps.msg" NAME_WE)
+get_filename_component(_filename "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/soni_gap_finding/msg/lidar_gaps.msg" NAME_WE)
 add_custom_target(_soni_gap_finding_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "soni_gap_finding" "/home/paresh/Autonomous_racing/soni_f110_ws/src/soni_gap_finding/msg/lidar_gaps.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "soni_gap_finding" "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/soni_gap_finding/msg/lidar_gaps.msg" ""
 )
 
 #

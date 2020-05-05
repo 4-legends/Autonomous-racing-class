@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/talker.dir/src/talker.cpp.o"
-  "/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/devel/lib/beginner_tutorials/talker.pdb"
-  "/home/paresh/Autonomous_racing/Ros-Lab/soni_ws/devel/lib/beginner_tutorials/talker"
+  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/devel/lib/beginner_tutorials/talker.pdb"
+  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/devel/lib/beginner_tutorials/talker"
 )
 
 # Per-language clean rules from dependency scanning.

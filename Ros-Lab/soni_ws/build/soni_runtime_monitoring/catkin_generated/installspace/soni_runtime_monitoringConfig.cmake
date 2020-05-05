@@ -67,14 +67,14 @@ set(soni_runtime_monitoring_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(soni_runtime_monitoring_SOURCE_PREFIX /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/src/soni_runtime_monitoring)
-  set(soni_runtime_monitoring_DEVEL_PREFIX /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/devel)
+  set(soni_runtime_monitoring_SOURCE_PREFIX /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/src/soni_runtime_monitoring)
+  set(soni_runtime_monitoring_DEVEL_PREFIX /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/devel)
   set(soni_runtime_monitoring_INSTALL_PREFIX "")
   set(soni_runtime_monitoring_PREFIX ${soni_runtime_monitoring_DEVEL_PREFIX})
 else()
   set(soni_runtime_monitoring_SOURCE_PREFIX "")
   set(soni_runtime_monitoring_DEVEL_PREFIX "")
-  set(soni_runtime_monitoring_INSTALL_PREFIX /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/install)
+  set(soni_runtime_monitoring_INSTALL_PREFIX /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/install)
   set(soni_runtime_monitoring_PREFIX ${soni_runtime_monitoring_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/paresh/Autonomous_racing/Ros-Lab/soni_ws/install/lib;/opt/ros/melodic/lib)
+    foreach(path /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/Ros-Lab/soni_ws/install/lib;/home/graspinglab/catkin_ws/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

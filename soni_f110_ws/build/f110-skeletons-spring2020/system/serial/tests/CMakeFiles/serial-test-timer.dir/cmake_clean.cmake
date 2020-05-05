@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/serial-test-timer.dir/unit/unix_timer_tests.cc.o"
-  "/home/paresh/Autonomous_racing/soni_f110_ws/devel/lib/serial/serial-test-timer.pdb"
-  "/home/paresh/Autonomous_racing/soni_f110_ws/devel/lib/serial/serial-test-timer"
+  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/serial/serial-test-timer.pdb"
+  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/serial/serial-test-timer"
 )
 
 # Per-language clean rules from dependency scanning.

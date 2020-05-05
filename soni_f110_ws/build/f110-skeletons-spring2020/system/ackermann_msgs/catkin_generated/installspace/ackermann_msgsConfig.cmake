@@ -67,14 +67,14 @@ set(ackermann_msgs_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(ackermann_msgs_SOURCE_PREFIX /home/paresh/Autonomous_racing/soni_f110_ws/src/f110-skeletons-spring2020/system/ackermann_msgs)
-  set(ackermann_msgs_DEVEL_PREFIX /home/paresh/Autonomous_racing/soni_f110_ws/devel)
+  set(ackermann_msgs_SOURCE_PREFIX /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/ackermann_msgs)
+  set(ackermann_msgs_DEVEL_PREFIX /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel)
   set(ackermann_msgs_INSTALL_PREFIX "")
   set(ackermann_msgs_PREFIX ${ackermann_msgs_DEVEL_PREFIX})
 else()
   set(ackermann_msgs_SOURCE_PREFIX "")
   set(ackermann_msgs_DEVEL_PREFIX "")
-  set(ackermann_msgs_INSTALL_PREFIX /home/paresh/Autonomous_racing/soni_f110_ws/install)
+  set(ackermann_msgs_INSTALL_PREFIX /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/install)
   set(ackermann_msgs_PREFIX ${ackermann_msgs_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(ackermann_msgs_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "include;/usr/local/include " STREQUAL " ")
+if(NOT "include;/usr/include " STREQUAL " ")
   set(ackermann_msgs_INCLUDE_DIRS "")
-  set(_include_dirs "include;/usr/local/include")
+  set(_include_dirs "include;/usr/include")
   if(NOT "https://github.com/ros-drivers/ackermann_msgs/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.com/ros-drivers/ackermann_msgs/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://ros.org/wiki/ackermann_msgs " STREQUAL " ")
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/paresh/Autonomous_racing/soni_f110_ws/install/lib;/home/paresh/Autonomous_racing/soni_f110_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/install/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
