@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/hokuyo_node/include/hokuyo_node/hokuyo.h
+/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/hokuyo_node/include/hokuyo_node/hokuyo.h
 stdexcept
 -
 termios.h
@@ -20,7 +20,7 @@ stdint.h
 limits
 -
 
-/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/hokuyo_node/src/hokuyo.cpp
+/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/hokuyo_node/src/hokuyo.cpp
 stdio.h
 -
 string.h
@@ -36,7 +36,7 @@ poll.h
 signal.h
 -
 hokuyo_node/hokuyo.h
-/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/hokuyo_node/src/hokuyo_node/hokuyo.h
+/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/hokuyo_node/src/hokuyo_node/hokuyo.h
 algorithm
 -
 time.h
@@ -44,13 +44,13 @@ time.h
 fcntl.h
 -
 ros/console.h
-/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/hokuyo_node/src/ros/console.h
+/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/hokuyo_node/src/ros/console.h
 sys/time.h
 -
 
-/opt/ros/kinetic/include/ros/console.h
+/opt/ros/melodic/include/ros/console.h
 console_backend.h
-/opt/ros/kinetic/include/ros/console_backend.h
+/opt/ros/melodic/include/ros/console_backend.h
 cstdio
 -
 sstream
@@ -66,13 +66,15 @@ map
 vector
 -
 log4cxx/level.h
-/opt/ros/kinetic/include/ros/log4cxx/level.h
+/opt/ros/melodic/include/ros/log4cxx/level.h
 rosconsole/macros_generated.h
-/opt/ros/kinetic/include/ros/rosconsole/macros_generated.h
+/opt/ros/melodic/include/ros/rosconsole/macros_generated.h
 
-/opt/ros/kinetic/include/ros/console_backend.h
+/opt/ros/melodic/include/ros/console_backend.h
+ros/macros.h
+-
 
-/opt/ros/kinetic/include/ros/duration.h
+/opt/ros/melodic/include/ros/duration.h
 iostream
 -
 math.h
@@ -84,27 +86,25 @@ climits
 stdint.h
 -
 rostime_decl.h
-/opt/ros/kinetic/include/ros/rostime_decl.h
+/opt/ros/melodic/include/ros/rostime_decl.h
 
-/opt/ros/kinetic/include/ros/exception.h
+/opt/ros/melodic/include/ros/exception.h
 stdexcept
 -
 
-/opt/ros/kinetic/include/ros/macros.h
+/opt/ros/melodic/include/ros/macros.h
 
-/opt/ros/kinetic/include/ros/platform.h
-windows.h
--
+/opt/ros/melodic/include/ros/platform.h
 stdlib.h
 -
 string
 -
 
-/opt/ros/kinetic/include/ros/rostime_decl.h
+/opt/ros/melodic/include/ros/rostime_decl.h
 ros/macros.h
 -
 
-/opt/ros/kinetic/include/ros/time.h
+/opt/ros/melodic/include/ros/time.h
 ros/platform.h
 -
 iostream
@@ -114,15 +114,15 @@ cmath
 ros/exception.h
 -
 duration.h
-/opt/ros/kinetic/include/ros/duration.h
+/opt/ros/melodic/include/ros/duration.h
 boost/math/special_functions/round.hpp
 -
 rostime_decl.h
-/opt/ros/kinetic/include/ros/rostime_decl.h
+/opt/ros/melodic/include/ros/rostime_decl.h
 sys/timeb.h
 -
 sys/time.h
 -
 
-/opt/ros/kinetic/include/rosconsole/macros_generated.h
+/opt/ros/melodic/include/rosconsole/macros_generated.h
 

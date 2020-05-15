@@ -1,8 +1,8 @@
-# Install script for directory: /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/serial
+# Install script for directory: /home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/serial
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,29 +32,34 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/build/f110-skeletons-spring2020/system/serial/catkin_generated/installspace/serial.pc")
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/build/f110-skeletons-spring2020/system/serial/catkin_generated/installspace/serial.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/serial/cmake" TYPE FILE FILES
-    "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/build/f110-skeletons-spring2020/system/serial/catkin_generated/installspace/serialConfig.cmake"
-    "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/build/f110-skeletons-spring2020/system/serial/catkin_generated/installspace/serialConfig-version.cmake"
+    "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/build/f110-skeletons-spring2020/system/serial/catkin_generated/installspace/serialConfig.cmake"
+    "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/build/f110-skeletons-spring2020/system/serial/catkin_generated/installspace/serialConfig-version.cmake"
     )
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/serial" TYPE FILE FILES "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/serial/package.xml")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/serial" TYPE FILE FILES "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/serial/package.xml")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libserial.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libserial.so")
     file(RPATH_CHECK
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libserial.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/libserial.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/libserial.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libserial.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libserial.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -63,16 +68,16 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   endif()
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/serial" TYPE FILE FILES
-    "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/serial/include/serial/serial.h"
-    "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/serial/include/serial/v8stdint.h"
+    "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/serial/include/serial/serial.h"
+    "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/serial/include/serial/v8stdint.h"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/build/f110-skeletons-spring2020/system/serial/tests/cmake_install.cmake")
+  include("/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/build/f110-skeletons-spring2020/system/serial/tests/cmake_install.cmake")
 
 endif()
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/joystick_drivers/joy
+# Install script for directory: /home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/joystick_drivers/joy
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,34 +32,39 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/build/f110-skeletons-spring2020/system/joystick_drivers/joy/catkin_generated/installspace/joy.pc")
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/build/f110-skeletons-spring2020/system/joystick_drivers/joy/catkin_generated/installspace/joy.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy/cmake" TYPE FILE FILES
-    "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/build/f110-skeletons-spring2020/system/joystick_drivers/joy/catkin_generated/installspace/joyConfig.cmake"
-    "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/build/f110-skeletons-spring2020/system/joystick_drivers/joy/catkin_generated/installspace/joyConfig-version.cmake"
+    "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/build/f110-skeletons-spring2020/system/joystick_drivers/joy/catkin_generated/installspace/joyConfig.cmake"
+    "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/build/f110-skeletons-spring2020/system/joystick_drivers/joy/catkin_generated/installspace/joyConfig-version.cmake"
     )
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy" TYPE FILE FILES "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/joystick_drivers/joy/package.xml")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy" TYPE FILE FILES "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/joystick_drivers/joy/package.xml")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/joy/joy_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/joy/joy_node")
     file(RPATH_CHECK
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/joy/joy_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/joy" TYPE EXECUTABLE FILES "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/joy/joy_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/joy" TYPE EXECUTABLE FILES "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/joy/joy_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/joy/joy_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/joy/joy_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/joy/joy_node"
-         OLD_RPATH "/opt/ros/kinetic/lib:"
+         OLD_RPATH "/opt/ros/melodic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/joy/joy_node")
@@ -67,7 +72,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   endif()
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy" TYPE DIRECTORY FILES "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/joystick_drivers/joy/migration_rules")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy" TYPE DIRECTORY FILES "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/joystick_drivers/joy/migration_rules")
 endif()
 

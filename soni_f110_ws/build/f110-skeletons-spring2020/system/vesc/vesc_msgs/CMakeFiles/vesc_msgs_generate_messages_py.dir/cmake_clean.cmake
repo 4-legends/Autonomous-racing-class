@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/vesc_msgs_generate_messages_py"
-  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/python2.7/dist-packages/vesc_msgs/msg/_VescStateStamped.py"
-  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/python2.7/dist-packages/vesc_msgs/msg/_VescState.py"
-  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/python2.7/dist-packages/vesc_msgs/msg/__init__.py"
+  "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/python2.7/dist-packages/vesc_msgs/msg/_VescStateStamped.py"
+  "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/python2.7/dist-packages/vesc_msgs/msg/_VescState.py"
+  "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/python2.7/dist-packages/vesc_msgs/msg/__init__.py"
 )
 
 # Per-language clean rules from dependency scanning.

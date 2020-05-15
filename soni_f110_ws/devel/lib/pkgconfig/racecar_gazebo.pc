@@ -1,4 +1,4 @@
-prefix=/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel
+prefix=/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/devel
 
 Name: racecar_gazebo
 Description: Description of racecar_gazebo

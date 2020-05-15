@@ -1,8 +1,8 @@
-# Install script for directory: /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/soni_wall_following
+# Install script for directory: /home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/src/soni_wall_following
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,18 +32,23 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/build/soni_wall_following/catkin_generated/installspace/soni_wall_following.pc")
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/build/soni_wall_following/catkin_generated/installspace/soni_wall_following.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/soni_wall_following/cmake" TYPE FILE FILES
-    "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/build/soni_wall_following/catkin_generated/installspace/soni_wall_followingConfig.cmake"
-    "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/build/soni_wall_following/catkin_generated/installspace/soni_wall_followingConfig-version.cmake"
+    "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/build/soni_wall_following/catkin_generated/installspace/soni_wall_followingConfig.cmake"
+    "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/build/soni_wall_following/catkin_generated/installspace/soni_wall_followingConfig-version.cmake"
     )
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/soni_wall_following" TYPE FILE FILES "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/soni_wall_following/package.xml")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/soni_wall_following" TYPE FILE FILES "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/src/soni_wall_following/package.xml")
 endif()
 

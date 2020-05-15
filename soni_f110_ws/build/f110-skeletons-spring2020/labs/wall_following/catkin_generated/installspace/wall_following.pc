@@ -1,8 +1,0 @@
-prefix=/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/install
-
-Name: wall_following
-Description: Description of wall_following
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

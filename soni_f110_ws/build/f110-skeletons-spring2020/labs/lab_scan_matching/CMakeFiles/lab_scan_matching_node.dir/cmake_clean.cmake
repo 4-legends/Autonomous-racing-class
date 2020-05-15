@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lab_scan_matching_node.dir/src/scan_matching.cpp.o"
-  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/lab_scan_matching/lab_scan_matching_node.pdb"
-  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/lab_scan_matching/lab_scan_matching_node"
+  "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/lab_scan_matching/lab_scan_matching_node.pdb"
+  "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/lab_scan_matching/lab_scan_matching_node"
 )
 
 # Per-language clean rules from dependency scanning.

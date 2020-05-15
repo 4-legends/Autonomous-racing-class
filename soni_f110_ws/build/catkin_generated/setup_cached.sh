@@ -7,10 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD="/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/build"
-export PYTHONPATH="/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/opt/ros/melodic/share/euslisp/jskeus/eus//Linux64/lib:/home/graspinglab/carla-ros-bridge/catkin_ws/devel/lib:/opt/ros/melodic/lib:/opt/ros/melodic/share/euslisp/jskeus/eus//Linux64/lib:/opt/ros/melodic/share/euslisp/jskeus/eus//Linux64/lib"
+export PATH="/opt/ros/melodic/share/euslisp/jskeus/eus//Linux64/bin:/opt/ros/melodic/bin:/opt/ros/melodic/share/euslisp/jskeus/eus//Linux64/bin:/opt/ros/melodic/share/euslisp/jskeus/eus//Linux64/bin:/home/graspinglab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/cuda/bin"
+export PWD="/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/src:$ROS_PACKAGE_PATH"

@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/setup.sh
+    local-name: /home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/devel/setup.sh

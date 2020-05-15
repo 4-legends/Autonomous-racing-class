@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/serial_example.dir/examples/serial_example.cc.o"
-  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/serial/serial_example.pdb"
-  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/serial/serial_example"
+  "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/serial/serial_example.pdb"
+  "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/serial/serial_example"
 )
 
 # Per-language clean rules from dependency scanning.

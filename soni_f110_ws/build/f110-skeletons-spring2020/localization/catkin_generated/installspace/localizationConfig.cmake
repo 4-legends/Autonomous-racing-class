@@ -67,14 +67,14 @@ set(localization_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(localization_SOURCE_PREFIX /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/localization)
-  set(localization_DEVEL_PREFIX /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel)
+  set(localization_SOURCE_PREFIX /home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/localization)
+  set(localization_DEVEL_PREFIX /home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/devel)
   set(localization_INSTALL_PREFIX "")
   set(localization_PREFIX ${localization_DEVEL_PREFIX})
 else()
   set(localization_SOURCE_PREFIX "")
   set(localization_DEVEL_PREFIX "")
-  set(localization_INSTALL_PREFIX /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/install)
+  set(localization_INSTALL_PREFIX /home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/install)
   set(localization_PREFIX ${localization_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/install/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/install/lib;/home/graspinglab/carla-ros-bridge/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

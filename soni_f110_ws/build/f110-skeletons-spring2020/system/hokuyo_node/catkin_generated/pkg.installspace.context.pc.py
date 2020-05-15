@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "rosconsole".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-llibhokuyo".split(';') if "-llibhokuyo" != "" else []
 PROJECT_NAME = "hokuyo_node"
-PROJECT_SPACE_DIR = "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/install"
+PROJECT_SPACE_DIR = "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/install"
 PROJECT_VERSION = "1.7.8"

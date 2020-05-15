@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/joy_node.dir/src/joy_node.cpp.o"
-  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/joy/joy_node.pdb"
-  "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/joy/joy_node"
+  "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/joy/joy_node.pdb"
+  "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib/joy/joy_node"
 )
 
 # Per-language clean rules from dependency scanning.

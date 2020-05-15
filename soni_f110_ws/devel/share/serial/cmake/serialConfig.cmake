@@ -67,14 +67,14 @@ set(serial_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(serial_SOURCE_PREFIX /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/serial)
-  set(serial_DEVEL_PREFIX /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel)
+  set(serial_SOURCE_PREFIX /home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/serial)
+  set(serial_DEVEL_PREFIX /home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/devel)
   set(serial_INSTALL_PREFIX "")
   set(serial_PREFIX ${serial_DEVEL_PREFIX})
 else()
   set(serial_SOURCE_PREFIX "")
   set(serial_DEVEL_PREFIX "")
-  set(serial_INSTALL_PREFIX /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/install)
+  set(serial_INSTALL_PREFIX /home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/install)
   set(serial_PREFIX ${serial_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(serial_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/serial/include " STREQUAL " ")
+if(NOT "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/serial/include " STREQUAL " ")
   set(serial_INCLUDE_DIRS "")
-  set(_include_dirs "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/serial/include")
+  set(_include_dirs "/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/serial/include")
   if(NOT "https://github.com/wjwwood/serial/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.com/wjwwood/serial/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://wjwwood.github.com/serial/ " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/s
         message(FATAL_ERROR "Project 'serial' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'serial' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/serial/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'serial' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/src/f110-skeletons-spring2020/system/serial/${idir}'.  ${_report}")
     endif()
     _list_append_unique(serial_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/devel/lib;/home/graspinglab/carla-ros-bridge/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

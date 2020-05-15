@@ -1,4 +1,4 @@
-prefix=/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/install
+prefix=/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/install
 
 Name: waypoint_logger
 Description: Description of waypoint_logger

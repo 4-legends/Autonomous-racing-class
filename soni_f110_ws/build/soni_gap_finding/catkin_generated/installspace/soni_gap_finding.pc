@@ -1,4 +1,4 @@
-prefix=/home/graspinglab/Autonomous_racing/Paresh-Soni-F110-2020/soni_f110_ws/install
+prefix=/home/graspinglab/carla-ros-bridge/Paresh-Soni-F110-2020/soni_f110_ws/install
 
 Name: soni_gap_finding
 Description: Description of soni_gap_finding
