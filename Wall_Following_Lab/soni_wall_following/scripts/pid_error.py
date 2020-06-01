@@ -7,91 +7,122 @@ import yaml
 import sys
 from sensor_msgs.msg import LaserScan
 from std_msgs.msg import Float64
-import pdb
 
 pub = rospy.Publisher('pid_error', Float64, queue_size=10)
 
 # You can define constants in Python as uppercase global names like these.
-MIN_DISTANCE = 0.1
-MAX_DISTANCE = 30.0
-MIN_ANGLE = -45.0
-MAX_ANGLE = 225.0
+MIN_DISTANCE = rospy.get_param('MIN_DISTANCE')
+MAX_DISTANCE = rospy.get_param('MAX_DISTANCE')
+MIN_ANGLE = rospy.get_param('MIN_ANGLE')
+MAX_ANGLE = rospy.get_param('MAX_ANGLE')
 
-# data: single message from topic /scan
-# angle: between -45 to 225 degrees, where 0 degrees is directly to the right
-# Outputs length in meters to object with angle in lidar scan field of view
+
+THETA = rospy.get_param('THETA')
+LOOKAHEAD_DISTANCE = rospy.get_param('LOOKAHEAD_DISTANCE')
+DESIRED_DISTANCE = rospy.get_param('DESIRED_DISTANCE')
+
 def getRange(data, angle):
-  # TODO: implement
-  #Laser scan angle increment is 0.25 deg
-  scan1 = 0.25
-  L = 0.5
-  Zerodeg = int(45/scan1)
-  right2 = int(angle/scan1)
-  left180 = int(180/scan1)
-  left2 = int((180-angle)/scan1)
-  
-  radangle = np.deg2rad(angle)
-  if data[right2] < 11 or data[left2] < 11:
-  	alphar = np.arctan((data[right2]*np.cos(radangle) - data[Zerodeg])/(data[right2]*np.sin(radangle)))
-  	alphal = np.arctan((data[left2]*np.cos(radangle) - data[left180])/(data[left2]*np.sin(radangle)))
-  
-  	Dtr = data[Zerodeg]*np.cos(alphar)
-  	Dtl = data[left180]*np.cos(alphal)
-  
-  	right = Dtr + L*np.sin(alphar)
-  	left  = Dtl + L*np.sin(alphal)
-  else:
-  	left = 0
-  	right = 0
-  return left, right
 
-# data: single message from topic /scan
+  data_arr = np.array(data.ranges)
+  #filter data
+  data_arr[data_arr>MAX_DISTANCE] = MAX_DISTANCE
+  data_arr[data_arr<MIN_DISTANCE] = MIN_DISTANCE
+
+  # check if within fixed angle bounds 
+  if angle<MIN_ANGLE:
+    angle = MIN_ANGLE
+  elif angle>MAX_ANGLE:
+    angle = MAX_ANGLE
+
+  # find Index of range value
+  ranges_idx = int((angle - MIN_ANGLE)/np.degrees(data.angle_increment))
+  range_val = data_arr[ranges_idx]
+
+  return range_val
+
+
+def compute_projectedDistance(a, b, flag=''):
+    num = a*np.cos(np.radians(THETA)) - b
+    denom= a*np.sin(np.radians(THETA))
+    alpha = np.arctan2(num, denom)
+
+    Dt = b*np.cos(alpha)
+    if flag =='center':
+        Dt = 0
+    Dt_projected = Dt + LOOKAHEAD_DISTANCE*np.sin(alpha)
+    return Dt_projected
+
+
+# data: single message from topic /scanc
 # desired_distance: desired distance to the left wall [meters]
 # Outputs the PID error required to make the car follow the left wall.
 def followLeft(data, desired_distance):
-  # TODO: implement
-  error = desired_distance - data
-  return error
+
+  #diametrically opposite to right side.
+  b = getRange(data, 180.0)
+  a = getRange(data, 180. - THETA)
+
+  Dt_projected =compute_projectedDistance(a,b)
+  left_error =  Dt_projected - desired_distance
+
+  return left_error, Dt_projected
 
 # data: single message from topic /scan
 # desired_distance: desired distance to the right wall [meters]
 # Outputs the PID error required to make the car follow the right wall.
-def followRight(data, desired_distance):
-  # TODO: implement
-  error = data - desired_distance
-  return error
+def followRight(data, desired_distance):  
+  a = getRange(data, THETA)
+  b = getRange(data, 0.0)
+
+  Dt_projected = compute_projectedDistance(a,b)
+  right_error =  desired_distance - Dt_projected
+
+  return right_error, Dt_projected
 
 # data: single message from topic /scan
 # Outputs the PID error required to make the car drive in the middle
 # of the hallway.
-def followCenter(left, right):
-  # TODO: implement
-  error = right - left
-  return error
+def followCenter(data, DESIRED_DISTANCE):
+    a = getRange(data, THETA)
+    b = getRange(data, 0)
+    theta = np.deg2rad(THETA)
+    tan_alpha = (a*math.cos(theta) - b)/(a*math.sin(theta))
+    alpha = math.atan(tan_alpha)
+
+    Dt_projected = compute_projectedDistance(a,b, 'center')
+
+    _, left_dist  = followLeft(data, DESIRED_DISTANCE)
+    _, right_dist  = followRight(data, DESIRED_DISTANCE)
+    center_error = left_dist - right_dist - Dt_projected  
+    return center_error
 
 # Callback for receiving LIDAR data on the /scan topic.
 # data: the LIDAR data, published as a list of distances to the wall.
 def scan_callback(data):
-  d_dist = 1
-  angle = 45
-  left, right = getRange(data.ranges, angle)
-  if left !=0 and right !=0:
-	  follow_wall = rospy.get_param("follow_wall")
-	  if follow_wall == 'left':
-	  	error = followLeft(left,d_dist) # TODO: replace with followLeft, followRight, or followCenter
-	  elif follow_wall == 'right':
-	  	error = followRight(right,d_dist)
-	  elif follow_wall == 'center':
-	  	error = followCenter(left, right)
-  else:
-  	error = 0
-  msg = Float64()
-  msg.data = error
-  pub.publish(msg)
+    left_error, _ = followLeft(data, DESIRED_DISTANCE)
+    right_error, _ = followRight(data, DESIRED_DISTANCE)
+    center_error = followCenter(data, DESIRED_DISTANCE)
+
+    DIRECTION = rospy.get_param('DIRECTION')
+    
+    if DIRECTION == 'left':
+        error = left_error
+    elif DIRECTION == 'right':
+       error = right_error
+    elif DIRECTION == 'center':
+       error = center_error
+    elif DIRECTION == 'stop':
+        error = 0.0
+        print("Stop Car!!")
+
+
+    msg = Float64()
+    msg.data = error
+    pub.publish(msg)
 
 # Boilerplate code to start this ROS node.
 # DO NOT MODIFY!
 if __name__ == '__main__':
-	rospy.init_node('pid_error_node', anonymous = True)
-	rospy.Subscriber("scan", LaserScan, scan_callback)
-	rospy.spin()
+    rospy.init_node('pid_error_node', anonymous = True)
+    rospy.Subscriber("scan", LaserScan, scan_callback)
+    rospy.spin()
